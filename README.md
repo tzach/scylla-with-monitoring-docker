@@ -3,5 +3,17 @@ It base on [Scylla 1.3 Docker image](https://github.com/scylladb/scylla/blob/bra
 
 Once Scylla [expose Prometheus metrics directly](https://github.com/scylladb/scylla/issues/1280), this project will be redudent and will be removed.
 
+### Build
+
+```
+sudo docker build -t scylla-with-monitoring .
+```
+
+### Run
+
+```
+sudo docker run --name some-scylla -d scylla-with-monitoring
+```
+
 ### Usage
 See [Scylla 1.3 Docker Image how to](https://github.com/scylladb/scylla/blob/branch-1.3/docs/docker-hub.md#how-to-use-this-image)
