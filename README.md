@@ -17,3 +17,4 @@ sudo docker run --name some-scylla -d scylla-with-monitoring
 
 ### Usage
 See [Scylla 1.3 Docker Image how to](https://github.com/scylladb/scylla/blob/branch-1.3/docs/docker-hub.md#how-to-use-this-image)
+ 
