@@ -1,6 +1,6 @@
 # Add monitoring agent to Scylla Docker image
 
-FROM scylladb/scylla:1.3-rc3
+FROM scylladb/scylla
 MAINTAINER Tzach Livyatan
 
 ADD collectd.conf /etc/collectd.conf
