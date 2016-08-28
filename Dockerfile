@@ -11,6 +11,4 @@ RUN wget https://github.com/prometheus/collectd_exporter/releases/download/0.2.0
 RUN tar -xvf collectd_exporter-0.2.0.linux-amd64.tar.gz
 RUN chmod a+x collectd_exporter
 
-ADD supervisor/ /etc/supervisor/conf.d/
-RUN echo "[include]" >> /etc/supervisord.conf
-RUN echo "files = /etc/supervisor/conf.d/*.conf" >> /etc/supervisord.conf
+ADD supervisor/ /etc/supervisord.conf.d
